@@ -1,5 +1,5 @@
 {
-  "name": "pay-employee-defi-ui",
+  "name": "@pauloluan/pay-employee-defi-ui",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",

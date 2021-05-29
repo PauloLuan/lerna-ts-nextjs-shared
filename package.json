@@ -1,5 +1,5 @@
 {
-  "name": "eparts",
+  "name": "@pauloluan/blockchain",
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
