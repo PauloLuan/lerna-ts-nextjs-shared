@@ -66,6 +66,7 @@
     "lint-staged": "^11.0.0",
     "next": "latest",
     "next-pwa": "^5.2.21",
+    "next-transpile-modules": "^7.2.0",
     "nyc": "15.1.0",
     "plop": "^2.7.4",
     "prettier": "2.3.0",
