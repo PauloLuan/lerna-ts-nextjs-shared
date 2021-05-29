@@ -1,9 +1,11 @@
 {
   "name": "eparts",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "yarn --ignore-engines; lerna bootstrap;",
     "postinstall": "husky install && chmod +x .husky/pre-commit",
     "build": "lerna run --parallel build",
     "start": "lerna run start --stream",
@@ -17,7 +19,11 @@
     }
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -25,20 +31,15 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.13.0",
     "@chakra-ui/icons": "^1.0.13",
     "@chakra-ui/react": "^1.6.3",
     "@chakra-ui/theme-tools": "1.1.7",
-    "@emotion/react": "11.4.0",
-    "@emotion/styled": "11.3.0",
-    "framer-motion": "4.1.17",
-    "next": "latest",
-    "next-pwa": "^5.2.21",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@babel/core": "^7.14.3",
-    "@babel/preset-typescript": "^7.13.0",
     "@emotion/babel-plugin": "^11.3.0",
     "@emotion/jest": "^11.3.0",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
@@ -57,10 +58,16 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "framer-motion": "4.1.17",
+    "husky": "^6.0.0",
     "jest": "^27.0.1",
     "lint-staged": "^11.0.0",
+    "next": "latest",
+    "next-pwa": "^5.2.21",
     "plop": "^2.7.4",
     "prettier": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "typescript": "4.3.2"
   }
 }
