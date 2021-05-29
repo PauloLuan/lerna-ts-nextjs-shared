@@ -1,29 +1,31 @@
 {
   "name": "eparts",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
     "build": "lerna run --parallel build",
     "start": "lerna run start --stream",
     "format": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
-    "format:quick": "pretty-quick --staged",
     "test": "lerna run --parallel test",
     "test:watch": "lerna run --parallel test:watch"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts(x)?": ["yarn lint --fix"]
   },
   "dependencies": {
     "@babel/core": "^7.14.3",
@@ -86,7 +88,6 @@
     "next-pwa": "^5.2.21",
     "plop": "^2.7.4",
     "prettier": "^2.3.0",
-    "pretty-quick": "^3.1.0",
     "react": "^17.0.2",
     "react-app-rewired": "^2.1.8",
     "react-dom": "^17.0.2",
