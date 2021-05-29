@@ -4,6 +4,7 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
+    "postinstall": "husky install && chmod +x .husky/pre-commit",
     "build": "lerna run --parallel build",
     "start": "lerna run start --stream",
     "format": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
@@ -18,14 +19,10 @@
       "last 1 safari version"
     ]
   },
-
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn format"
     }
-  },
-  "lint-staged": {
-    "src/**/*.ts(x)?": ["yarn lint --fix"]
   },
   "dependencies": {
     "@babel/core": "^7.14.3",
