@@ -8,7 +8,8 @@
     "start": "lerna run start --stream",
     "format": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "format:quick": "pretty-quick --staged",
-    "test": "lerna run --parallel test"
+    "test": "lerna run --parallel test",
+    "test:watch": "lerna run --parallel test:watch"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
