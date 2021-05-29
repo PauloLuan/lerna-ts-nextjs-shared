@@ -8,17 +8,5 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "6.2.7",
-    "@storybook/addon-docs": "6.2.7",
-    "@storybook/addon-knobs": "6.2.7",
-    "@storybook/addon-links": "6.2.7",
-    "@storybook/addons": "6.2.7",
-    "@storybook/react": "6.2.7",
-    "@storybook/theming": "6.2.7",
-    "@types/storybook__addon-knobs": "5.2.1",
-    "@types/storybook__react": "5.2.1",
-    "react-docgen-typescript-loader": "3.7.2"
   }
 }
