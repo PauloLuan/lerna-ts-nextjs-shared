@@ -1,3 +1,3 @@
 export const mindingo = (): string => {
-  return 'teste'
+  return 'Veio do shared'
 }

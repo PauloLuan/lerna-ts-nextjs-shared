@@ -1,11 +1,7 @@
-import { Flex, useColorMode, FlexProps } from '@chakra-ui/react'
-import { mindingo } from '@pauloluan/shared'
+import { Flex, FlexProps, useColorMode } from '@chakra-ui/react'
 
 const Container = (props: FlexProps) => {
   const { colorMode } = useColorMode()
-
-  const teste = mindingo()
-  console.log(teste)
 
   const bgColor = { light: 'gray.50', dark: 'gray.900' }
   const color = { light: 'black', dark: 'white' }
