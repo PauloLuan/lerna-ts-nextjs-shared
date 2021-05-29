@@ -6,8 +6,7 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest',
     '.(ts|tsx)': '<rootDir>/node_modules/ts-jest/preprocessor.js'
   },
-
-  setupFilesAfterEnv: ['./setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   collectCoverageFrom: ['packages/*/src/**/*.{js,jsx,ts,tsx}']
 }
