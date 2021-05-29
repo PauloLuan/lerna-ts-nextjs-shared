@@ -3,12 +3,12 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build",
+    "bootstrap": "yarn install; lerna bootstrap;",
+    "build": "lerna run --parallel build",
     "start": "lerna run start --stream",
     "format": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "format:quick": "pretty-quick --staged",
-    "test": "lerna run test --parallel"
+    "test": "lerna run --parallel test"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
