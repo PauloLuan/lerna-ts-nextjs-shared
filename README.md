@@ -19,12 +19,12 @@ If I were you, I would use [NX](https://nx.dev/latest/react/guides/nextjs) in or
 
 [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![standard][standard-image]][standard-url] [![forthebadge][60time-image]][60time-url]
 
-[travis-image]: https://img.shields.io/travis/pauloluan/assets/master.svg?style=for-the-badge
-[travis-url]: https://travis-ci.com/pauloluan/assets
-[daviddm-image]: https://img.shields.io/david/pauloluan/assets.svg?style=for-the-badge
-[daviddm-url]: https://david-dm.org/pauloluan/assets
-[coveralls-image]: http://img.shields.io/coveralls/pauloluan/assets/master.svg?style=for-the-badge
-[coveralls-url]: https://coveralls.io/github/pauloluan/assets?branch=master
+[travis-image]: https://img.shields.io/travis/pauloluan/lerna-ts-nextjs-shared/master.svg?style=for-the-badge
+[travis-url]: https://travis-ci.com/pauloluan/lerna-ts-nextjs-shared
+[daviddm-image]: https://img.shields.io/david/pauloluan/lerna-ts-nextjs-shared.svg?style=for-the-badge
+[daviddm-url]: https://david-dm.org/pauloluan/lerna-ts-nextjs-shared
+[coveralls-image]: http://img.shields.io/coveralls/pauloluan/lerna-ts-nextjs-shared/master.svg?style=for-the-badge
+[coveralls-url]: https://coveralls.io/github/pauloluan/lerna-ts-nextjs-shared?branch=master
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=for-the-badge
 [standard-url]: http://npm.im/standard
 [60time-image]: https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg
