@@ -9,10 +9,6 @@ If I were you, I would use [NX](https://nx.dev/latest/react/guides/nextjs) in or
 <span id="top"></span>
 
 <p align="center">
-  <img src="#"/>
-</p>
-
-<p align="center">
     <a href="#"><img src="https://github.com/pauloluan/assets/blob/master/back.png?raw=true" width="100"></a>
 </p>
 
