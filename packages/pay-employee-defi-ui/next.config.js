@@ -1,17 +1,19 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
-const withTM = require('next-transpile-modules')
+const withTM = require('next-transpile-modules')(['@pauloluan/shared'], {
+  debug: true,
+  future: {
+    webpack5: true
+  }
+})
 
-const isProduction = process.env.NODE_ENV === 'production'
-
-module.exports = withPWA(
-  {
-    pwa: {
-      dest: 'public',
-      disable: !isProduction
+module.exports = withTM({
+  webpack: (config, options) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      // Will make webpack look for these modules in parent directories
+      '@pauloluan/shared': require.resolve('@pauloluan/shared')
+      // ...
     }
-  },
-  withTM({
-    transpileModules: ['@pauloluan/shared']
-  })
-)
+    return config
+  }
+})
