@@ -1,0 +1,20 @@
+{
+  "name": "@pauloluan/shared",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "shx rm -rf dist tsconfig.tsbuildinfo",
+    "prepare": "yarn run build",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  }
+}
