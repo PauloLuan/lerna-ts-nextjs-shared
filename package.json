@@ -1,10 +1,9 @@
 {
   "name": "eparts",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
+    "generate": "yarn plop --plopfile generators/plopfile.js",
     "bootstrap": "yarn --ignore-engines; lerna bootstrap;",
     "postinstall": "husky install && chmod +x .husky/pre-commit",
     "build": "lerna run --parallel build",
@@ -19,11 +18,7 @@
     }
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
