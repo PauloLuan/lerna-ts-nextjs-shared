@@ -7,6 +7,8 @@ const withTM = require('next-transpile-modules')(['@pauloluan/shared'], {
 })
 
 module.exports = withTM({
+  transpileModules: ['@pauloluan/shared'],
+
   webpack: (config, options) => {
     config.resolve.alias = {
       ...config.resolve.alias,
